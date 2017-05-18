@@ -1,9 +1,9 @@
 # Version: 10.10.0.33 (d15-2: 3e5ac5ff)
 # [first argument, ignore] # --cache
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.33/lib/mtouch/mtouch.exe \
-	/Users/mac/GITVS/SlideMenuDemo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache \
 	--sim \
-	/Users/mac/GITVS/SlideMenuDemo/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/SlideMenuDemo.iOS.app \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/SlideMenuDemo.iOS.app \
 	--executable \
 	SlideMenuDemo.iOS \
 	--fastdev \
@@ -18,16 +18,16 @@
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/mac/GITVS/SlideMenuDemo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-symbols.list \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-symbols.list \
 	--dsym=no \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/CarouselView.FormsPlugin.4.2.4/lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/CarouselView.FormsPlugin.4.2.5/lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/CarouselView.FormsPlugin.4.2.4/lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/CarouselView.FormsPlugin.4.2.5/lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/SlideMenuDemo/bin/Debug/SlideMenuDemo.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/SlideMenuDemo/bin/Debug/SlideMenuDemo.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -35,13 +35,13 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
@@ -311,87 +311,87 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/CarouselView.FormsPlugin.4.2.4/lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/CarouselView.FormsPlugin.4.2.5/lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/CarouselView.FormsPlugin.4.2.4/lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/CarouselView.FormsPlugin.4.2.5/lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/SlideMenuDemo/bin/Debug/SlideMenuDemo.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/SlideMenuDemo/bin/Debug/SlideMenuDemo.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/mac/GITVS/SlideMenuDemo/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/mac/GITVS/SlideMenuDemo/iOS/bin/iPhoneSimulator/Debug/SlideMenuDemo.iOS.exe \
+	/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/iOS/bin/iPhoneSimulator/Debug/SlideMenuDemo.iOS.exe \

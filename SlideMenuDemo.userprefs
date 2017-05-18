@@ -1,5 +1,10 @@
-﻿<Properties StartupConfiguration="{8320993E-5776-4887-BD3D-114B90C0152C}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{6930D166-10A0-4210-BDC4-138E7F774BA3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SlideMenuDemo.git Status">
+    <Files>
+      <File FileName="SlideMenuDemo/Views/SlideUpMenuView.xaml.cs" Line="59" Column="36" />
+      <File FileName="SlideMenuDemo.git Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SlideMenuDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.19AED3B2-6061-4A23-BEB3-F41A28A516C9" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

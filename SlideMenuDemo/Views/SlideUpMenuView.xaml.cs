@@ -56,7 +56,7 @@ namespace SlideMenuDemo.Views
 
         async Task MoveTabMarkerToReceived()
         {
-            await tapSelectedMarker.TranslateTo(0, 0, 100);
+            await tapSelectedMarker.TranslateTo(0, 0, 200);
             tapSelectedPosition = 0;
         }
 
