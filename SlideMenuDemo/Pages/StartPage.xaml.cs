@@ -94,5 +94,9 @@ namespace SlideMenuDemo.Pages
             tapCountMenu = 1; // Set flag to menu Open
         }
 
+        async void ContentOverlayTabbed(object sender, EventArgs args)
+        {
+            await OpenCloseSlideUpMenuAsync();
+        }
     }
 }

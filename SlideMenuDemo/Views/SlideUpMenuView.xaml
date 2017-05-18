@@ -6,7 +6,7 @@
         <StackLayout BackgroundColor="#700606" x:Name="bottomTapBar" Orientation="Horizontal" VerticalOptions="End" Padding="0" Spacing="0">
             <StackLayout x:Name="recievedTap" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
-                <Label Text="Received" x:Name="receivedLabel" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                <Label Text="In" FontSize="Medium" FontAttributes="Bold" x:Name="receivedLabel" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnReceivedTappedAsync" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>
@@ -23,7 +23,7 @@
             </StackLayout>
             <StackLayout x:Name="sentTap" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
-                <Label Text="Sent" x:Name="sentLabel" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                <Label Text="Out" FontSize="Medium" FontAttributes="Bold" x:Name="sentLabel" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnSentTappedAsync" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>
@@ -35,19 +35,19 @@
         <!--              -->
         <!-- Menu Content -->
         <!--              -->
-        <Grid x:Name="controlGrid" RowSpacing="0" ColumnSpacing="0">
+        <Grid x:Name="controlGrid" RowSpacing="0" ColumnSpacing="0" BackgroundColor="#700606">
             <Grid.RowDefinitions>
                 <RowDefinition Height="200" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <StackLayout Grid.Row="0" Grid.Column="0" x:Name="menuoptions" BackgroundColor="Red" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200">
+            <StackLayout Grid.Row="0" Grid.Column="0" x:Name="menuoptions" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200">
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnSentTappedAsync" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
-                <Button Text="Open New Screen" BackgroundColor="White" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Handle_Clicked" />
-                <Label Text="using a label to open a new page" TextColor="Blue" BackgroundColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center">
+                <Button Text=" Open New Page " BackgroundColor="White" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Handle_Clicked" />
+                <Label Text=" Using A Label To Open A New Page " TextColor="Blue" BackgroundColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Handle_Clicked" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>

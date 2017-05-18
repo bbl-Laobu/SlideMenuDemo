@@ -25,7 +25,11 @@
                 ShowIndicators="false" />
             <!-- -->
             <!-- Overlay: Used to obscure content when Menu is visible-->
-            <BoxView x:Name="contentOverlay" Color="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Opacity="0" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <BoxView x:Name="contentOverlay" Color="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Opacity="0" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ContentOverlayTabbed" NumberOfTapsRequired="1" />
+                    </BoxView.GestureRecognizers>
+            </BoxView>
             <!-- -->
             <!-- one version used for animation-->
             <StackLayout x:Name="slideUpMenu_Animated" Grid.Row="2" Grid.Column="0" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0" HeightRequest="240">
