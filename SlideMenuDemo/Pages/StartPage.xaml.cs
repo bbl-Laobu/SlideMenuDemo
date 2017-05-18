@@ -23,6 +23,7 @@ namespace SlideMenuDemo.Pages
             SubcribeToSlideUpMenuMessages(); // Needed to catch SlideUpMenu events such as open and close menu...
 
             controlGrid.LowerChild(slideUpMenu_Interactive); // hide menu used for interaction to the back of the display stack
+            //slideUpMenu_Interactive.IsVisible = false;
         }
 
 

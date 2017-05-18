@@ -11,7 +11,7 @@
 namespace SlideMenuDemo.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mac/GITVS/SlideMenuDemo/SlideMenuDemo/Pages/StartPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/SlideMenuDemo/Pages/StartPage.xaml")]
     public partial class StartPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

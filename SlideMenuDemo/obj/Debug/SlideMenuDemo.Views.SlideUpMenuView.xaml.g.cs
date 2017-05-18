@@ -11,7 +11,7 @@
 namespace SlideMenuDemo.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mac/GITVS/SlideMenuDemo/SlideMenuDemo/Views/SlideUpMenuView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mac/GITVS/bbl-Laobu/SlideMenuDemo.git/SlideMenuDemo/Views/SlideUpMenuView.xaml")]
     public partial class SlideUpMenuView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -48,10 +48,10 @@ namespace SlideMenuDemo.Views {
         private global::Xamarin.Forms.BoxView sentMiddleAnchor;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.StackLayout menuoptions;
+        private global::Xamarin.Forms.Grid controlGrid;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label dummy;
+        private global::Xamarin.Forms.StackLayout menuoptions;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -67,8 +67,8 @@ namespace SlideMenuDemo.Views {
             sentTap = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.StackLayout>(this, "sentTap");
             sentLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "sentLabel");
             sentMiddleAnchor = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.BoxView>(this, "sentMiddleAnchor");
+            controlGrid = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Grid>(this, "controlGrid");
             menuoptions = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.StackLayout>(this, "menuoptions");
-            dummy = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "dummy");
         }
     }
 }
