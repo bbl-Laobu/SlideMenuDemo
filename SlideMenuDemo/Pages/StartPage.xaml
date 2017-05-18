@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:SlideMenuDemo.Views" x:Class="SlideMenuDemo.Pages.StartPage" xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions" Title="SlideUp Menu Demo">
+    <ContentPage.Content>
+        <Grid x:Name="controlGrid" RowSpacing="0" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="gridRow0" Height="*" />
+                <RowDefinition x:Name="gridRow1" Height="200" />
+                <RowDefinition x:Name="gridRow2" Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- -->
+            <!-- Content as CarouselView-->
+            <controls:CarouselViewControl 
+                x:Name="myCarousel" 
+                Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                AnimateTransition="false" IndicatorsShape="Square" InterPageSpacing="1" 
+                BackgroundColor="Gray"
+                IsSwipingEnabled="false"
+                ItemTemplate="{Binding TemplateSelector}" ItemsSource="{Binding ItemsSource}" 
+                Orientation="Horizontal" Position="{Binding Position}" 
+                ShowIndicators="false" />
+            <!-- -->
+            <!-- Overlay: Used to obscure content when Menu is visible-->
+            <BoxView x:Name="contentOverlay" Color="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Opacity="0" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <!-- -->
+            <!-- one version used for animation-->
+            <StackLayout x:Name="slideUpMenu_Animated" Grid.Row="2" Grid.Column="0" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0">
+                <views:SlideUpMenuView />
+            </StackLayout>
+            <!-- -->
+            <!-- second identical version used for interaction-->
+            <StackLayout x:Name="slideUpMenu_Interactive" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0">
+                <views:SlideUpMenuView />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

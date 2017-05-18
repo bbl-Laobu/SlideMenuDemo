@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SlideMenuDemo.Views.SlideUpMenuView">
+    <StackLayout BackgroundColor="#700606" x:Name="bottomMenu" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0">
+        <!-- Top Bar -->
+        <!--         -->
+        <StackLayout BackgroundColor="#700606" x:Name="bottomTapBar" Orientation="Horizontal" VerticalOptions="End" Padding="0" Spacing="0">
+            <StackLayout x:Name="recievedTap" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
+                <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
+                <Label Text="Received" x:Name="receivedLabel" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnReceivedTappedAsync" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView x:Name="tapSelectedMarker" Color="White" BackgroundColor="Navy" HorizontalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="2" />
+                <BoxView Color="Transparent" x:Name="receivedMiddleAnchor" HorizontalOptions="Center" WidthRequest="1" VerticalOptions="End" HeightRequest="3" />
+            </StackLayout>
+            <StackLayout x:Name="menuTap" Orientation="Vertical" HorizontalOptions="Center" Padding="0" Spacing="0">
+                <Image x:Name="menuButtonImage" Source="MenuButton.png" HorizontalOptions="Center" WidthRequest="40">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnMenuTappedAsync" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout x:Name="sentTap" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
+                <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
+                <Label Text="Sent" x:Name="sentLabel" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSentTappedAsync" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="2" />
+                <BoxView Color="Transparent" x:Name="sentMiddleAnchor" HorizontalOptions="Center" WidthRequest="1" VerticalOptions="End" HeightRequest="3" />
+            </StackLayout>
+        </StackLayout>
+        <!--              -->
+        <!-- Menu Content -->
+        <!--              -->
+        <StackLayout x:Name="menuoptions" BackgroundColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnSentTappedAsync" NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+            <Button Text="Open New Screen" BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Handle_Clicked" />
+            <Label Text="dummy" BackgroundColor="Teal" x:Name="dummy" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Handle_Clicked" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentView>
