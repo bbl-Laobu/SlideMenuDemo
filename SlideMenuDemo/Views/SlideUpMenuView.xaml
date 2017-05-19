@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SlideMenuDemo.Views.SlideUpMenuView">
     <!-- -->
     <!-- Menu (Header + Content) -->
@@ -11,7 +11,7 @@
             <!-- -->
             <StackLayout x:Name="headerLeftButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
-                <Label x:Name="LeftLabel" Text="In" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                <Label x:Name="LeftLabel" Text="Start Page" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnHeaderLeftButtonTappedAsync" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>
@@ -33,7 +33,7 @@
             <!-- -->
             <StackLayout x:Name="headerRightButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
-                <Label x:Name="RightLabel" Text="Out" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                <Label x:Name="RightLabel" Text="Scroll View" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnHeaderRightButtonTappedAsync" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>

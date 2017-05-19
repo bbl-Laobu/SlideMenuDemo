@@ -10,13 +10,6 @@ namespace SlideMenuDemo.Views
 		public MySecondView ()
 		{
 			InitializeComponent ();
-			BackgroundColor = Color.White;
-            Debug.WriteLine("in second view");
-
-			/*var source = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
-
-			myList.ItemsSource = source;*/
-            
         }
 	}
 }

@@ -11,10 +11,7 @@ namespace SlideMenuDemo.Views
 		public MyFirstView ()
 		{
 			InitializeComponent ();
-            BackgroundColor = Color.White;
-			Debug.WriteLine("in first view");
 		}
-
 	}
 }
 
