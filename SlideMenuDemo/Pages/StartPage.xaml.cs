@@ -10,7 +10,8 @@ namespace SlideMenuDemo.Pages
 {
     public partial class StartPage : ContentPage
     {
-        int tapCountMenu;
+        static uint slideMenuSpeed = 200;
+        int slideMenuOpenClosePosition;
         public MainViewModel _vm;
 
         public StartPage()
@@ -22,8 +23,8 @@ namespace SlideMenuDemo.Pages
 
             SubcribeToSlideUpMenuMessages(); // Needed to catch SlideUpMenu events such as open and close menu...
 
-            controlGrid.LowerChild(slideUpMenu_Interactive); // hide menu used for interaction to the back of the display stack
-            //slideUpMenu_Interactive.IsVisible = false;
+            startPageLayout.LowerChild(slideUpMenu_Interactive); // hide menu used for interaction to the back of the display stack
+            //NOTE: The menu for Interaction should not be set to invisible as this will cause problems registering for messaging
         }
 
 
@@ -40,11 +41,11 @@ namespace SlideMenuDemo.Pages
                 await CloseSlideUpMenuAsync();
             });
 
-            MessagingCenter.Subscribe<SlideUpMenuView>(this, "ReceivedClicked", (sender) =>
+            MessagingCenter.Subscribe<SlideUpMenuView>(this, "LeftClicked", (sender) =>
             {
                 _vm.Position = 0;
             });
-            MessagingCenter.Subscribe<SlideUpMenuView>(this, "SentClicked", (sender) =>
+            MessagingCenter.Subscribe<SlideUpMenuView>(this, "RightClicked", (sender) =>
             {
                 _vm.Position = 1;
             });
@@ -52,9 +53,9 @@ namespace SlideMenuDemo.Pages
 
         async Task OpenCloseSlideUpMenuAsync()
         {
-            tapCountMenu++;
+            slideMenuOpenClosePosition++;
 
-            if (tapCountMenu % 2 == 0) // Close SlideUp Menu
+            if (slideMenuOpenClosePosition % 2 == 0) // Close SlideUp Menu
             {
                 await CloseSlideUpMenuAsync();
 
@@ -68,16 +69,16 @@ namespace SlideMenuDemo.Pages
         async Task CloseSlideUpMenuAsync()
         {
             // Hide menu
-            slideUpMenu_Animated.IsVisible = true;
-            controlGrid.LowerChild(slideUpMenu_Interactive);
-            await slideUpMenu_Animated.TranslateTo(0, 0, 200, Easing.CubicInOut);
+            slideUpMenu_Animated.IsVisible = true; 
+            startPageLayout.LowerChild(slideUpMenu_Interactive);
+            await slideUpMenu_Animated.TranslateTo(0, 0, slideMenuSpeed, Easing.CubicInOut);
 
             // content overlay
             await contentOverlay.FadeTo(0, 100, Easing.CubicOut);
             contentOverlay.IsVisible = false;
 
 
-            tapCountMenu = 0; // reset counter to menu closed
+            slideMenuOpenClosePosition = 0; // reset counter to menu closed
         }
 
         async Task OpenSlideUpMenuAsync()
@@ -87,11 +88,11 @@ namespace SlideMenuDemo.Pages
             await contentOverlay.FadeTo(0.9, 20, Easing.CubicIn);
 
             // Show menu
-            await slideUpMenu_Animated.TranslateTo(0, -200, 200, Easing.CubicInOut);
-			controlGrid.RaiseChild(slideUpMenu_Interactive);
-            slideUpMenu_Animated.IsVisible = false;
+            await slideUpMenu_Animated.TranslateTo(0, -200, slideMenuSpeed, Easing.CubicInOut);
+			startPageLayout.RaiseChild(slideUpMenu_Interactive);
+            slideUpMenu_Animated.IsVisible = false; 
 
-            tapCountMenu = 1; // Set flag to menu Open
+            slideMenuOpenClosePosition = 1; // Set flag to menu Open
         }
 
         async void ContentOverlayTabbed(object sender, EventArgs args)

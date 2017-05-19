@@ -8,7 +8,8 @@ namespace SlideMenuDemo.Views
 {
     public partial class SlideUpMenuView : ContentView
     {
-        static int tapSelectedPosition;
+        static int headerButtonSelectedPosition; //0=Left, 1=Right
+        static uint tapMarkerSpeed = 200;
 
         public SlideUpMenuView()
         {
@@ -25,46 +26,46 @@ namespace SlideMenuDemo.Views
             MessagingCenter.Send<SlideUpMenuView>(this, "OpenCloseSlideUpMenu");
         }
 
-        void OnReceivedTappedAsync(object sender, EventArgs args)
+        void OnHeaderLeftButtonTappedAsync(object sender, EventArgs args)
         {
-            tapSelectedPosition = 0;
+            headerButtonSelectedPosition = 0;
             MessagingCenter.Send<SlideUpMenuView>(this, "UpdateTabMarker");
-			MessagingCenter.Send<SlideUpMenuView>(this, "ReceivedClicked");
+			MessagingCenter.Send<SlideUpMenuView>(this, "LeftClicked");
 			MessagingCenter.Send<SlideUpMenuView>(this, "CloseSlideUpMenu");
         }
 
-        void OnSentTappedAsync(object sender, EventArgs args)
+        void OnHeaderRightButtonTappedAsync(object sender, EventArgs args)
         {
-            tapSelectedPosition = 1;
+            headerButtonSelectedPosition = 1;
             MessagingCenter.Send<SlideUpMenuView>(this, "UpdateTabMarker");
-			MessagingCenter.Send<SlideUpMenuView>(this, "SentClicked");
+			MessagingCenter.Send<SlideUpMenuView>(this, "RightClicked");
 			MessagingCenter.Send<SlideUpMenuView>(this, "CloseSlideUpMenu");
         }
 
 
         async Task updateTabMarker()
         {
-            if (tapSelectedPosition == 0)
+            if (headerButtonSelectedPosition == 0)
             {
-                await MoveTabMarkerToReceived();
+                await MoveTabMarkerToLeft();
             }
             else
             {
-                await MoveTabMarkerToSent();
+                await MoveTabMarkerToRight();
             }
         }
 
-        async Task MoveTabMarkerToReceived()
+        async Task MoveTabMarkerToLeft()
         {
-            await tapSelectedMarker.TranslateTo(0, 0, 200);
-            tapSelectedPosition = 0;
+            await buttonSelectedMarker.TranslateTo(0, 0, tapMarkerSpeed);
+            headerButtonSelectedPosition = 0;
         }
 
-        async Task MoveTabMarkerToSent()
+        async Task MoveTabMarkerToRight()
         {
-            var tapSelectedEndPos = recievedTap.Width / 2 + menuTap.Width + sentTap.Width / 2;
-            await tapSelectedMarker.TranslateTo(tapSelectedEndPos, 0, 100);
-            tapSelectedPosition = 1;
+            var tapSelectedEndPos = headerLeftButton.Width / 2 + menuButton.Width + headerRightButton.Width / 2;
+            await buttonSelectedMarker.TranslateTo(tapSelectedEndPos, 0, tapMarkerSpeed);
+            headerButtonSelectedPosition = 1;
         }
 
 
