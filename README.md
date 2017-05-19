@@ -7,11 +7,15 @@ A simple demo application demonstrating how to create a Slide Menu using only Xa
 ## DESCRIPTION
 The demo uses a combination of Grid Layout, Layers and Translate Animation to create a smooth Slide Menu when tapping the menu button at the bottom.
 
+![Concept]({{site.baseurl}}/SlideMenuPictureA.png)
+
 A SlideUpMenuView defines the layout of the menu. This view is then used twice in the StartPage; once for the animation of sliding the menu up/down and once for detecting interactions when open.
 
 To avoid any flickering, we must make sure that when switching between Animated SlideMenuView and Interactive SlideMenuView both are aligned perfectly. Therefore, we use a Grid Layout to position the Interactive SlideMenuView at exactly 240 (40 + 200) from the bottom of the screen. We place it there, hidden in the background behind the content view waiting to be shown when ready. 
 
 When starting the app, we begin by showing the Animated SlideMenuView on Grid Row 2, 40 from the bottom. Once we get an event to slide open the menu, we move (Translate animation) the Animated SlideMenuView to Grid Row 1 (-200 vertically up). Once in place, we finish by Raising the Interactive SlideMenuView to the front of the Layout. The menu is now fully displayed and can be interacted with.
+
+![Steps]({{site.baseurl}}/SlideMenuPictureB.png)
 
 Using 2 SlideMenuViews is needed because when only using the Animated SlideViewMenu, Xamarin is unable to detect gestures on that SlideViewMenu as the interactive user controls on the layer underneath are still detected instead. This makes the menu visible but useless. 
 
@@ -27,11 +31,10 @@ Laobu!
 
 
 ## REFERENCES
-•	‘Grid - Present views in grids.’ By Xamarin @ https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/grid/ 
+- ‘Grid - Present views in grids.’ By Xamarin @ [https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/grid/](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/grid/ )
+- ‘Carousel View’ by alexrainman @ [https://github.com/alexrainman/CarouselView](https://github.com/alexrainman/CarouselView)
+- ‘Creating Animations with Xamarin.Forms’ by David Britch @ [https://blog.xamarin.com/creating-animations-with-xamarin-forms/](https://blog.xamarin.com/creating-animations-with-xamarin-forms/)
 
-•	‘Carousel View’ by alexrainman @ https://github.com/alexrainman/CarouselView
-
-•	‘Creating Animations with Xamarin.Forms’ by David Britch @ https://blog.xamarin.com/creating-animations-with-xamarin-forms/ 
 
 Author
 Laobu – Bernard Blanckaert
