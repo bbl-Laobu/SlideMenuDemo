@@ -7,7 +7,7 @@ A simple demo application demonstrating how to create a Slide Menu using only Xa
 ## DESCRIPTION
 The demo uses a combination of Grid Layout, Layers and Translate Animation to create a smooth Slide Menu when tapping the menu button at the bottom.
 
-![Concept]({{site.baseurl}}/SlideMenuPictureA.png)
+![Concept](https://raw.githubusercontent.com/bbl-Laobu/SlideMenuDemo/master/SlideMenuPictureA.png)
 
 A SlideUpMenuView defines the layout of the menu. This view is then used twice in the StartPage; once for the animation of sliding the menu up/down and once for detecting interactions when open.
 
@@ -15,7 +15,7 @@ To avoid any flickering, we must make sure that when switching between Animated 
 
 When starting the app, we begin by showing the Animated SlideMenuView on Grid Row 2, 40 from the bottom. Once we get an event to slide open the menu, we move (Translate animation) the Animated SlideMenuView to Grid Row 1 (-200 vertically up). Once in place, we finish by Raising the Interactive SlideMenuView to the front of the Layout. The menu is now fully displayed and can be interacted with.
 
-![Steps]({{site.baseurl}}/SlideMenuPictureB.png)
+![Steps](https://github.com/bbl-Laobu/SlideMenuDemo/raw/master/SlideMenuPictureB.png)
 
 Using 2 SlideMenuViews is needed because when only using the Animated SlideViewMenu, Xamarin is unable to detect gestures on that SlideViewMenu as the interactive user controls on the layer underneath are still detected instead. This makes the menu visible but useless. 
 
