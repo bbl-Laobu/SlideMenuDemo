@@ -11,7 +11,7 @@
             <!-- -->
             <StackLayout x:Name="headerLeftButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
-                <Label x:Name="LeftLabel" Text="Start Page" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
+                <Label x:Name="LeftLabel" Text="Intro" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnHeaderLeftButtonTappedAsync" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>
