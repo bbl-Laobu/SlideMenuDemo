@@ -57,14 +57,14 @@ namespace SlideMenuDemo.Views
 
         async Task MoveTabMarkerToLeft()
         {
-            await buttonSelectedMarker.TranslateTo(0, 0, tapMarkerSpeed);
+            await ButtonSelectedMarker.TranslateTo(0, 0, tapMarkerSpeed);
             headerButtonSelectedPosition = 0;
         }
 
         async Task MoveTabMarkerToRight()
         {
-            var tapSelectedEndPos = headerLeftButton.Width / 2 + menuButton.Width + headerRightButton.Width / 2;
-            await buttonSelectedMarker.TranslateTo(tapSelectedEndPos, 0, tapMarkerSpeed);
+            var tapSelectedEndPos = HeaderLeftButton.Width / 2 + MenuButton.Width + HeaderRightButton.Width / 2;
+            await ButtonSelectedMarker.TranslateTo(tapSelectedEndPos, 0, tapMarkerSpeed);
             headerButtonSelectedPosition = 1;
         }
 

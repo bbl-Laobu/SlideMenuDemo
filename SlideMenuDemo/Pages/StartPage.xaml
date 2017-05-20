@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:views="clr-namespace:SlideMenuDemo.Views" x:Class="SlideMenuDemo.Pages.StartPage" xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions" 
     Title="Start Page">
@@ -6,10 +6,10 @@
     <!-- Start Page (Carousel + Menu) -->
     <!-- -->
     <ContentPage.Content>
-        <Grid x:Name="startPageLayout" RowSpacing="0" ColumnSpacing="0">
+        <Grid x:Name="MenuContentLayout" RowSpacing="0" ColumnSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition x:Name="gridRow0" Height="*" />
-                <RowDefinition x:Name="gridRow1" Height="200" />
+                <RowDefinition x:Name="GridRow0" Height="*" />
+                <RowDefinition x:Name="GridRow1" Height="200" />
                 <RowDefinition x:Name="gridRow2" Height="40" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -18,7 +18,7 @@
             <!-- -->
             <!-- Content as CarouselView-->
             <controls:CarouselViewControl 
-                x:Name="myCarousel" 
+                x:Name="ContentCarousel" 
                 Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" 
                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" InterPageSpacing="0" 
                 AnimateTransition="true" 
@@ -29,7 +29,7 @@
                 ShowIndicators="false" IndicatorsShape="Circle" />
             <!-- -->
             <!-- Overlay: Used to obscure content when Menu is visible-->
-            <BoxView x:Name="contentOverlay" Color="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Opacity="0" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <BoxView x:Name="ContentOverlay" Color="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Opacity="0" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <BoxView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="ContentOverlayTabbed" NumberOfTapsRequired="1" />
                     </BoxView.GestureRecognizers>
@@ -38,12 +38,12 @@
             <!-- SlideUp Menu-->
             <!-- -->
             <!-- one version used for animation-->
-            <StackLayout x:Name="slideUpMenu_Animated" Grid.Row="2" Grid.Column="0" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0" HeightRequest="240">
+            <StackLayout x:Name="SlideUpMenu_Animated" Grid.Row="2" Grid.Column="0" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0" HeightRequest="240">
                 <views:SlideUpMenuView />
             </StackLayout>
             <!-- -->
             <!-- second identical version used for interaction-->
-            <StackLayout x:Name="slideUpMenu_Interactive" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0" HeightRequest="240">
+            <StackLayout x:Name="SlideUpMenu_Interactive" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0" HeightRequest="240">
                 <views:SlideUpMenuView />
             </StackLayout>
         </Grid>

@@ -8,7 +8,7 @@
             <Label TextColor="Black" FontAttributes="Bold" HorizontalOptions="StartAndExpand" Text="Description :" />
             <Label TextColor="Black" HorizontalOptions="StartAndExpand" Text="The demo uses a combination of Grid Layout, Layers and Translate Animation to create a smooth Slide Menu when tapping the menu button at the bottom." />
             <Label TextColor="Black" HorizontalOptions="StartAndExpand" Text="A SlideUpMenuView defines the layout of the menu. This view is then used twice in the StartPage; once for the animation of sliding the menu up/down and once for detecting interactions when open." />
-            <Label TextColor="Blue" HorizontalOptions="StartAndExpand" Text="For more info please see the SlideMenuDemo page on Github.">
+            <Label TextColor="Blue" HorizontalOptions="StartAndExpand" Text="For more info please see the SlideMenuDemo ReadMe on Github.">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Handle_Clicked" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>

@@ -19,11 +19,11 @@ namespace SlideMenuDemo.Pages
             InitializeComponent();
 
             BindingContext = _vm = new MainViewModel();
-            // myCarousel.ItemTemplate = new DataTemplate(typeof(MyFirstView));
+            // ContentCarousel.ItemTemplate = new DataTemplate(typeof(MyFirstView));
 
             SubcribeToSlideUpMenuMessages(); // Needed to catch SlideUpMenu events such as open and close menu...
 
-            startPageLayout.LowerChild(slideUpMenu_Interactive); // hide menu used for interaction to the back of the display stack
+            MenuContentLayout.LowerChild(SlideUpMenu_Interactive); // hide menu used for interaction to the back of the display stack
             //NOTE: The menu for Interaction should not be set to invisible as this will cause problems registering for messaging
         }
 
@@ -69,13 +69,13 @@ namespace SlideMenuDemo.Pages
         async Task CloseSlideUpMenuAsync()
         {
             // Hide menu
-            slideUpMenu_Animated.IsVisible = true; 
-            startPageLayout.LowerChild(slideUpMenu_Interactive);
-            await slideUpMenu_Animated.TranslateTo(0, 0, slideMenuSpeed, Easing.CubicInOut);
+            SlideUpMenu_Animated.IsVisible = true; 
+            MenuContentLayout.LowerChild(SlideUpMenu_Interactive);
+            await SlideUpMenu_Animated.TranslateTo(0, 0, slideMenuSpeed, Easing.CubicInOut);
 
             // content overlay
-            await contentOverlay.FadeTo(0, 100, Easing.CubicOut);
-            contentOverlay.IsVisible = false;
+            await ContentOverlay.FadeTo(0, 100, Easing.CubicOut);
+            ContentOverlay.IsVisible = false;
 
 
             slideMenuOpenClosePosition = 0; // reset counter to menu closed
@@ -84,13 +84,13 @@ namespace SlideMenuDemo.Pages
         async Task OpenSlideUpMenuAsync()
         {
             // content overlay
-            contentOverlay.IsVisible = true;
-            await contentOverlay.FadeTo(0.9, 20, Easing.CubicIn);
+            ContentOverlay.IsVisible = true;
+            await ContentOverlay.FadeTo(0.9, 20, Easing.CubicIn);
 
             // Show menu
-            await slideUpMenu_Animated.TranslateTo(0, -200, slideMenuSpeed, Easing.CubicInOut);
-			startPageLayout.RaiseChild(slideUpMenu_Interactive);
-            slideUpMenu_Animated.IsVisible = false; 
+            await SlideUpMenu_Animated.TranslateTo(0, -200, slideMenuSpeed, Easing.CubicInOut);
+			MenuContentLayout.RaiseChild(SlideUpMenu_Interactive);
+            SlideUpMenu_Animated.IsVisible = false; 
 
             slideMenuOpenClosePosition = 1; // Set flag to menu Open
         }

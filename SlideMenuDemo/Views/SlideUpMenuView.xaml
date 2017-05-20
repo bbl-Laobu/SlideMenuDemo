@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SlideMenuDemo.Views.SlideUpMenuView">
     <!-- -->
     <!-- Menu (Header + Content) -->
@@ -6,10 +6,10 @@
     <StackLayout x:Name="slideUpMenuLayout" BackgroundColor="#700606" Orientation="Vertical" VerticalOptions="Start" Padding="0" Spacing="0" HeightRequest="240">
         <!-- Menu Header -->
         <!-- -->
-        <StackLayout x:Name="menuHeader" BackgroundColor="#700606" Orientation="Horizontal" VerticalOptions="End" Padding="0" Spacing="0">
+        <StackLayout x:Name="MenuHeader" BackgroundColor="#700606" Orientation="Horizontal" VerticalOptions="End" Padding="0" Spacing="0">
             <!-- Left Button -->
             <!-- -->
-            <StackLayout x:Name="headerLeftButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
+            <StackLayout x:Name="HeaderLeftButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
                 <Label x:Name="LeftLabel" Text="Intro" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
@@ -17,13 +17,13 @@
                     </Label.GestureRecognizers>
                 </Label>
                 <!-- Button Selected Marker -->
-                <BoxView x:Name="buttonSelectedMarker" Color="White" BackgroundColor="Navy" HorizontalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="2" />
+                <BoxView x:Name="ButtonSelectedMarker" Color="White" BackgroundColor="Navy" HorizontalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="2" />
                 <BoxView Color="Transparent" HorizontalOptions="Center" WidthRequest="1" VerticalOptions="End" HeightRequest="3" />
             </StackLayout>
             <!-- Menu Button -->
             <!-- -->
-            <StackLayout x:Name="menuButton" Orientation="Vertical" HorizontalOptions="Center" Padding="0" Spacing="0">
-                <Image x:Name="menuButtonImage" Source="menubutton.png" HorizontalOptions="Center" WidthRequest="40">
+            <StackLayout x:Name="MenuButton" Orientation="Vertical" HorizontalOptions="Center" Padding="0" Spacing="0">
+                <Image x:Name="MenuButtonImage" Source="menubutton.png" HorizontalOptions="Center" WidthRequest="40">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnMenuTappedAsync" NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
@@ -31,7 +31,7 @@
             </StackLayout>
             <!-- Right Button -->
             <!-- -->
-            <StackLayout x:Name="headerRightButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
+            <StackLayout x:Name="HeaderRightButton" Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0" Spacing="0">
                 <BoxView Color="Transparent" HorizontalOptions="CenterAndExpand" HeightRequest="1" />
                 <Label x:Name="RightLabel" Text="Scroll View" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
@@ -52,7 +52,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <StackLayout x:Name="menuoptions" Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200">
+            <StackLayout x:Name="Menuoptions" Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200">
                 <Button Text=" Open New Page " BackgroundColor="White" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Handle_Clicked" />
                 <Label Text=" Using A Label To Open A New Page " TextColor="Blue" BackgroundColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center">
                     <Label.GestureRecognizers>
