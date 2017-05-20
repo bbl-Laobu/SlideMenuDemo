@@ -43,6 +43,9 @@
     <EmbeddedResource Include="Pages\RotateAnimationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BBLGitHubWebPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -65,6 +68,9 @@
     </Compile>
     <Compile Include="Pages\RotateAnimationPage.xaml.cs">
       <DependentUpon>RotateAnimationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BBLGitHubWebPage.xaml.cs">
+      <DependentUpon>BBLGitHubWebPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
