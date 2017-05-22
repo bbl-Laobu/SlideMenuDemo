@@ -4,6 +4,8 @@ A simple but effective Xamarin Forms SlideMenu Demo
 ## INTRODUCTION
 A simple demo application demonstrating how to create a Slide Menu using only CORE Xamarin Forms.
 
+![Demo](https://raw.githubusercontent.com/bbl-Laobu/SlideMenuDemo/master/SimpleSlideMenuDemo.gif)
+
 ## DESCRIPTION
 The demo uses a combination of Grid Layout, Layers and Translate Animation to create a smooth Slide Menu when tapping the menu button at the bottom.
 
