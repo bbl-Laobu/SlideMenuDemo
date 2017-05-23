@@ -38,5 +38,5 @@ Laobu!
 - ‘Creating Animations with Xamarin.Forms’ by David Britch @ [https://blog.xamarin.com/creating-animations-with-xamarin-forms/](https://blog.xamarin.com/creating-animations-with-xamarin-forms/)
 
 
-Author
+## AUTHOR
 Laobu – Bernard Blanckaert
